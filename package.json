@@ -1,0 +1,28 @@
+{
+  "name": "@miriam/core",
+  "version": "0.1.0",
+  "description": "Core tools, hooks, and skills for Miriam AI assistant",
+  "type": "module",
+  "main": "src/index.ts",
+  "scripts": {
+    "test": "node --test --experimental-strip-types tests/**/*.test.ts",
+    "test:tools": "node --test --experimental-strip-types tests/tools/*.test.ts",
+    "test:hooks": "node --test --experimental-strip-types tests/hooks/*.test.ts",
+    "test:watch": "node --test --watch --experimental-strip-types tests/**/*.test.ts"
+  },
+  "openclaw": {
+    "extensions": ["./src/index.ts"],
+    "skills": [
+      "./skills/research",
+      "./skills/voice-tts",
+      "./skills/platform-formatting",
+      "./skills/machine-access"
+    ],
+    "hooks": [
+      "./hooks/knowledge-extraction",
+      "./hooks/access-level-bootstrap"
+    ]
+  },
+  "keywords": ["openclaw", "plugin", "miriam"],
+  "license": "UNLICENSED"
+}

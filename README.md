@@ -1,42 +1,46 @@
 # @miriam/core
 
+OpenClaw core tools and skills for Miriam AI assistant.
+
 ## Installation
 
-### NPM
+Install directly from GitHub:
+
 ```bash
-npm install @miriam/core
+npm install github:trianglegrrl/miriam-core
 ```
 
-### GitHub Packages
-```bash
-npm install @trianglegrrl/miriam-core
+Or in your package.json:
+
+```json
+{
+  "dependencies": {
+    "@miriam/core": "github:trianglegrrl/miriam-core"
+  }
+}
 ```
-
-## Usage
-
-```javascript
-import { researchTool, voiceTTS } from '@miriam/core';
-
-// Example: Perform web research
-const results = await researchTool.perplexitySearch("Your research query");
-```
-
-## Requirements
-- OpenClaw 2026.2+
-- Node.js 20+
-- Configured API keys for external services
 
 ## Features
-- Web Research
-- Voice TTS
-- Platform Formatting
-- Machine Access Hooks
 
-## Configuration
-Requires OpenClaw configuration and API key setup.
+- Research tools
+- Voice/TTS capabilities
+- Platform formatting
+- Machine access hooks
+- Emotional state tracking
+- Memory management tools
+
+## Requirements
+
+- OpenClaw 2026.2+
+- Node.js 20+
+- Configured API keys
 
 ## Development
+
 ```bash
 npm test  # Run test suite
-npm test:watch  # Watch mode
 ```
+
+## License
+
+UNLICENSED - Private package
